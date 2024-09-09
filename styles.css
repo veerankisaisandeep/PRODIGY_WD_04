@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    background-color: #0D1B2A;
+    color: #F0EDEE;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #0D1B2A;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #D4AF37;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F5CBA7;
+}
+
+/* Home Section */
+.section-home {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.section-home h1 {
+    font-size: 50px;
+    color: #D4AF37;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.section-home p {
+    font-size: 24px;
+    color: #F0EDEE;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Skills Section */
+.section-skills {
+    background: #0D1B2A;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.section-skills h2 {
+    font-size: 36px;
+    color: #D4AF37;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-item {
+    background: #800020;
+    border-radius: 8px;
+    padding: 20px;
+    color: #F0EDEE;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.skill-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Experience Section */
+.section-experience {
+    background: #0D1B2A;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.section-experience h2 {
+    font-size: 36px;
+    color: #D4AF37;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.timeline-item {
+    background: #800020;
+    border-radius: 8px;
+    padding: 20px;
+    color: #F0EDEE;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Projects Section */
+.section-projects {
+    background: #800020;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.section-projects h2 {
+    font-size: 36px;
+    color: #F0EDEE;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-item {
+    background: #0D1B2A;
+    border-radius: 8px;
+    padding: 20px;
+    color: #F0EDEE;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.section-contact {
+    background: #0D1B2A;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.section-contact h2 {
+    font-size: 36px;
+    color: #D4AF37;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+/* Footer */
+footer {
+    background: #0D1B2A;
+    text-align: center;
+    padding: 20px;
+    color: #F0EDEE;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
